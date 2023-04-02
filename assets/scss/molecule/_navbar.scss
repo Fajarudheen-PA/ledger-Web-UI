@@ -41,13 +41,13 @@
         align-items: center;
         justify-content: center;
         padding: $spacer-0 $spacer-3;
-        color: $color-white;
+        color: $color-black;
         margin: auto;
         &:hover{
             scale: 1.1;
-            background-color: unset;
-            color: $color-blue-2;
-            border: 1px solid $color-blue-2;
+            background-color: $color-blue-2;
+            color: $color-white;
+            border: 1px solid $color-white;
             font-weight: $font-medium;
             margin: 0 auto;
             box-shadow: 1px 2px 5px $color-blue-2;
