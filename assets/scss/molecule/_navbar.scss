@@ -29,7 +29,15 @@
             box-shadow: none;
         }
     }
-
+    &.sticky{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: $color-white;
+        box-shadow: 0 2px 5px $color-grey-2;
+        animation: 0.3s navbar-slider linear;
+    }
     &__nav-link{
         background: linear-gradient(90deg,#001a4d,#0055ff);
         background-clip: text;
@@ -111,5 +119,19 @@
                 }
             }
         }
+        .navbar-nav li{
+            &:hover{
+                background: linear-gradient(90deg,$color-white, $color-grey-2, $color-white);
+                transform: translateX(3px);
+            }
+        }
+    }
+}
+@keyframes navbar-slider{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0);
     }
 }
