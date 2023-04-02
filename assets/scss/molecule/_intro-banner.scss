@@ -1,0 +1,21 @@
+.intro-banner{
+    background-image: linear-gradient(90deg,#001a4d,#0055ff);
+    padding: $spacer-4 0;
+    
+    .container-lg{
+        max-width: 1360px;
+    }
+    .btn{
+        border-radius: 2.3rem;
+        font-weight: $font-regular;
+        &:hover{
+            scale: 1.1;
+            background-color: unset;
+            color: $color-white;
+            border: 1px solid $color-white;
+            font-weight: $font-medium;
+            margin: 0 auto;
+            box-shadow: 1px 2px 5px $color-white;
+        }
+    }
+}
