@@ -1,0 +1,115 @@
+.ledger-header{
+    padding: $spacer-2 0;
+    background-color: $color-white;
+    box-shadow: 0 2px 5px $color-grey-2;
+
+    &__logo{
+        font-size: $spacer-5;
+        background: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
+    }
+    .container-xxl{
+        padding: $spacer-0;
+    }
+    .navbar-brand{
+        padding: $spacer-0;
+        margin: $spacer-0;
+        z-index: 4;
+    }
+    .navbar-expand-lg .navbar-collapse{
+        justify-content: end;
+        align-items: center;
+    }
+    .navbar-toggler{
+        border: none;
+        z-index: 3;
+        padding: $spacer-0;
+        &:focus{
+            box-shadow: none;
+        }
+    }
+
+    &__nav-link{
+        background: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
+        font-size: 24px;
+        font-weight: $font-medium;
+        &:hover{
+            color: $color-blue-2;
+        }
+        &.active{
+            color: $color-blue-2;
+        }
+        
+    }
+    &__nav-item{
+        margin: $spacer-3 $spacer-4;
+        &:last-child{
+            margin-right: $spacer-0;
+        }
+    }
+    &__call{
+        display: block;
+        width: 20px;
+        height: auto;
+    }
+    &__gradient{
+        fill: $color-blue-2;
+    }
+    &__overlay{
+        display: none;
+    }
+    &__close{
+        display: none;
+    }
+}
+
+@include mobile-tablet{
+    .ledger-header{
+        &__overlay{
+            display: block;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(0,0,0,0.6);
+            transition: 0.3s all;
+            z-index: 999;
+        }
+        &__close{
+            display: block;
+            width: 25px;
+            height: auto;
+            position: fixed;
+            top: 7px;
+            left: 90%;
+            transition: 0.3s all;
+        }
+        .navbar-collapse{
+            .navbar-nav{
+                position: fixed;
+                top: 0;
+                left: 0;
+                // background-color: $color-white;
+                background: url('../../images/ledger-web-intro.png');
+                width: 60%;
+                min-width: 280px;
+                height: 100vh;
+                padding: $spacer-3;
+                transform: translateX(-280px);
+                transition: all .3s ease-in-out;
+                opacity: 0;
+                z-index: 999;
+            }
+            &.show {
+                .navbar-nav {
+                    transform: translateX(0px);
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
