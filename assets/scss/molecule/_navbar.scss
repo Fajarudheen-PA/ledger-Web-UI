@@ -5,6 +5,7 @@
     padding: $spacer-2 0;
     background-color: $color-white;
     box-shadow: 0 2px 5px $color-grey-2;
+    z-index: 999;
 
     &__logo{
         font-size: $spacer-5;
@@ -119,6 +120,7 @@
             top: 7px;
             left: 90%;
             transition: 0.3s all;
+            background-color: $color-white;
         }
         .navbar-collapse{
             .navbar-nav{
