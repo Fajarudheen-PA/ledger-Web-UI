@@ -11,9 +11,10 @@
 @import "atom/button";
 
 // molecule
-@import "molecule/navbar";
-@import "molecule/intro-banner";
-@import "molecule/services";
-@import "molecule/about-us";
+
 
 // organisms
+@import "organisms/navbar";
+@import "organisms/intro-banner";
+@import "organisms/services";
+@import "organisms/about-us";
