@@ -1,0 +1,46 @@
+.about-us{
+    padding: $spacer-4 0;
+    background-color: $color-white;
+
+    .container-md{
+        padding: $spacer-0;
+    }
+
+    &__main-head{
+        font-size: $spacer-4;
+        font-weight: $font-bold;
+        background-image: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
+        &--sub-head{
+            font-size: 19px;
+            font-weight: $font-light;
+            margin-top: $spacer-1;
+        }
+    }
+    &__desc{
+        color: $color-black;
+        line-height: 24px;
+    }
+    &__faq{
+        font-size: $spacer-4;
+        font-weight: $font-medium;
+        background-image: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
+        margin-bottom: $spacer-3;
+    }
+    &__faq-desc{
+        color: $color-black;
+    }
+    
+    .accordion{
+        box-shadow: 2px 2px 8px $color-grey-2;
+    }
+    .accordion-button{
+        font-size: 18px;
+        background-image: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
+    }
+}
