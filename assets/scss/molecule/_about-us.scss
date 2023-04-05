@@ -44,3 +44,8 @@
         color: transparent;
     }
 }
+@include mobile-tablet{
+    .about-us{
+        padding: $spacer-0;
+    }
+}
