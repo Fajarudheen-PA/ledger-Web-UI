@@ -32,7 +32,15 @@
         font-weight: $font-regular;
     }
 
+    .bi-star-fill, .bi-star-half, .bi-star{
+        color: $color-green-2;
+    }
+
     .list-group-item{
-        border-radius: $spacer-6;
+        border-radius: $spacer-4;
+        &:hover{
+            scale: 1.03;
+            box-shadow: 2px 2px 5px $color-grey-2;
+        }
     }
 }
