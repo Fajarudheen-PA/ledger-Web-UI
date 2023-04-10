@@ -6,6 +6,10 @@
         padding: $spacer-0;
     }
 
+    .form-label{
+        font-weight: $font-medium;
+    }
+
     &__main-head{
         font-size: $spacer-4;
         font-weight: $font-bold;
