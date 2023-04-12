@@ -1,0 +1,52 @@
+.booking{
+    padding: $spacer-4 0;
+    background-image: url("../../assets/images/ledger-booking.jpg");
+
+    .container-lg{
+        padding: $spacer-0;
+    }
+
+    .form-label{
+        font-weight: $font-medium;
+    }
+
+    &__main-head{
+        font-size: $spacer-4;
+        font-weight: $font-bold;
+        background: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
+    }
+    &__sub-head{
+        font-size: 18px;
+        font-weight: $font-medium;
+        margin-top: $spacer-2;
+        background: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
+    }
+
+    .btn{
+        display: flex;
+        border-radius: 2.3rem;
+        width: 130px;
+        min-width: 100px;
+        height: 45px;
+        font-weight: $font-bold;
+        align-items: center;
+        justify-content: center;
+        padding: $spacer-0 $spacer-3;
+        color: $color-blue-2;
+        background-color: $color-white;
+        border: 2px solid $color-blue-2;
+        margin: auto;
+        &:hover{
+            scale: 1.1;
+            background-image: linear-gradient(90deg,#001a4d,#0055ff);
+            color: $color-white;
+            border: 1px solid $color-white;
+            font-weight: $font-medium;
+            box-shadow: 1px 2px 5px $color-blue-2;
+        }
+    }
+}
