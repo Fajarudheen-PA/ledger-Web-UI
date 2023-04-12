@@ -13,8 +13,21 @@ $(document).ready(function(){
       todayHighlight: true,
       orientation: 'bottom',
       templates: {
-        leftArrow: '<i class="glyphicon glyphicon-chevron-left"></i>',
-        rightArrow: '<i class="glyphicon glyphicon-chevron-right"></i>'
+        leftArrow: '<i class="bi bi-arrow-left-circle-fill"></i>',
+        rightArrow: '<i class="bi bi-arrow-right-circle-fill"></i>'
+      }
+    });
+  });
+
+  $(document).ready(function(){
+    $('#return').datepicker({
+      format: 'dd-mm-yyyy',
+      autoclose: true,
+      todayHighlight: true,
+      orientation: 'bottom',
+      templates: {
+        leftArrow: '<i class="bi bi-arrow-left-circle-fill"></i>',
+        rightArrow: '<i class="bi bi-arrow-right-circle-fill"></i>'
       }
     });
   });
