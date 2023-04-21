@@ -196,7 +196,8 @@
                                 </div>
 
                                 <div class="text-center mb-4">
-                                    <a href="#" class="btn" type="Submit">Get a Quote</a>
+                                    <!-- <a href="#" class="btn" type="Submit">Get a Quote</a> -->
+                                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#visa-modal">Get a Quote</button>
                                 </div>
                             </form>
                         </div>
@@ -206,6 +207,27 @@
         </div>
         <!-- visa-form -->
     </section>
+
+    <!-- modal section -->
+    <div class="modal-box">
+        <div class="modal fade" id="visa-modal" tabindex="-1" aria-labelledby="modal-title-4" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title modal-box__head" id="modal-title-4">Thank You..!</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="modal-box__desc">Our team will review your submission and get back to you as soon as possible.</p>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn" data-bs-dismiss="modal" aria-label="Close">OK</button>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal section -->
     <!-- visa -->
 
     <script src="../assets/js/jquery-3.5.1.slim.min.js"></script>
