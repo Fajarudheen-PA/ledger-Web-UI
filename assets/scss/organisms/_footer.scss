@@ -1,6 +1,8 @@
 .footer{
-    background-color: $color-blue-2;
-    padding: $spacer-5 0;
+    background-color: $color-grey-3;
+    border-top: 1px solid $color-blue-2;
+    border-bottom: 1px solid $color-blue-2;
+    padding: $spacer-4 0;
 
     &__footer-flex{
         display: flex;
@@ -19,20 +21,21 @@
             width: 2px;
             height: 100%;
             content: "";
-            background-color: $color-white;
+            background-color: $color-blue-2;
         }
         a{
-            color: $color-white;
-            &:hover{
-                text-decoration: underline;
-            }
+            background: linear-gradient(90deg,#001a4d,#0055ff);
+            background-clip: text;
+            color: transparent;
         }
     }
     &__copyright{
-        color: $color-blue;
+        background: linear-gradient(90deg,#001a4d,#0055ff);
+        background-clip: text;
+        color: transparent;
         padding: 0 $spacer-3;
         font-size: 16px;
-        font-weight: $font-regular;
+        font-weight: $font-medium;
         position: relative;
         &::after{
             position: absolute;
@@ -41,19 +44,21 @@
             width: 2px;
             height: 100%;
             content: "";
-            background-color: $color-white;
+            background-color: $color-blue-2;
         }
     }
     &__social-media-icons{
         display: flex;
         // align-items: center;
-        color: $color-white;
+        // color: $color-blue-2;
         padding: 0 $spacer-3;
         &__svg{
+            fill: $color-blue;
             width: 24px;
             transform: translateY(-1px);
             &:hover{
-                fill: $color-blue;
+                fill: $color-blue-2;
+                scale: 1.1;
             }
         }
     }
