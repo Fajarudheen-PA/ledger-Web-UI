@@ -64,6 +64,18 @@
     }
 }
 
+.offcanvas-bottom{
+    height: 38vh;
+}
+.offcanvas-title{
+    font-weight: $font-medium;
+    font-size: $spacer-4;
+}
+.off-desc{
+    font-size: 18px;
+    font-weight: $font-regular;
+}
+
 @include mobile{
     .footer{
         padding: $spacer-3 0;
